@@ -1,0 +1,54 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1739216556",
+        "python_version": "3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\legion\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\mlagents-learn --initialize-from=testfutbol6 --resume",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.12.0+cpu",
+        "numpy_version": "1.23.0",
+        "end_time_seconds": "1739216564"
+    },
+    "total": 7.981472300016321,
+    "count": 1,
+    "self": 0.00981269998010248,
+    "children": {
+        "run_training.setup": {
+            "total": 0.04279640002641827,
+            "count": 1,
+            "self": 0.04279640002641827
+        },
+        "TrainerController.start_learning": {
+            "total": 7.9288632000098005,
+            "count": 1,
+            "self": 0.00015709991566836834,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.774498600047082,
+                    "count": 1,
+                    "self": 7.774498600047082
+                },
+                "trainer_threads": {
+                    "total": 1.200009137392044e-06,
+                    "count": 1,
+                    "self": 1.200009137392044e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 0.15420630003791302,
+                    "count": 1,
+                    "self": 0.0004459000192582607,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.15376040001865476,
+                            "count": 1,
+                            "self": 0.15376040001865476
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
